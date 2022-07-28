@@ -150,6 +150,9 @@ i:hover {
     align-items: center;
   }
 
+  .logo-detail .img-small {
+    width: 50px;
+  }
   .logo-para {
     text-align: center;
     padding: 10px;
@@ -206,6 +209,13 @@ i:hover {
     top: 45px;
     right: 30px;
     background-color: #fff;
+  }
+
+  .logo-img {
+    align-items: center;
+    display: inline;
+    width: 50px;
+    margin-left: 120px;
   }
 }
 
