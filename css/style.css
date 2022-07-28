@@ -221,6 +221,7 @@ i:hover {
 .address-txt h2 {
   margin-top: 30px;
 }
+
 .box-txt {
   border: 2px solid white;
   margin: 0 auto;
@@ -240,7 +241,6 @@ i:hover {
 }
 
 .main-pro {
-  display: flex;
   padding-top: 30px;
   padding-bottom: 25px;
   display: block;
