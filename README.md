@@ -43,6 +43,6 @@ Give a ⭐ if you like this project!
 
 ## Acknowledgments
 
-- To team microverse and those who wrote the readme template
+Original design idea by https://www.behance.net/adagio07
 
 ## 📝 License
