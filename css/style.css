@@ -8,6 +8,10 @@
   font-family: 'lato', Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-weight: bolder;
+}
+
 .primary-nav {
   background-color: #272a31;
   display: none;
@@ -167,6 +171,43 @@ i:hover {
     background-color: #111;
     height: 100vh;
   }
+
+  .card {
+    display: flex;
+    background-color: #272a31;
+    margin: 10px;
+    color: #fff;
+    padding: 10px 5px;
+    opacity: 0.8;
+    flex: 1;
+  }
+
+  .card-img {
+    font-size: 20px;
+    color: #fff;
+    margin: 7px;
+  }
+
+  .card .card-title {
+    font-size: 16px;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    color: #ec5242;
+    padding: 8px;
+  }
+
+  .card .card-txt {
+    font-size: 15px;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+    padding: 10px;
+  }
+
+  .foo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .advert-txt {
@@ -177,6 +218,9 @@ i:hover {
   font-size: 25px;
 }
 
+.address-txt h2 {
+  margin-top: 30px;
+}
 .box-txt {
   border: 2px solid white;
   margin: 0 auto;
@@ -197,11 +241,19 @@ i:hover {
 
 .main-pro {
   display: flex;
-  justify-content: center;
-  text-decoration: underline;
-  text-decoration-color: #fff;
-  margin-bottom: 40px;
   padding-top: 30px;
+  padding-bottom: 25px;
+  display: block;
+  text-align: center;
+}
+
+.main-pro::after {
+  content: '';
+  display: block;
+  border: 1px solid #ec5242;
+  width: 60px;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .main-program {
@@ -218,30 +270,6 @@ i:hover {
   flex-wrap: wrap;
   align-items: center;
   gap: 5px;
-}
-
-.card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #272a31;
-  width: 230px;
-  height: auto;
-  position: relative;
-  transition: all 0.3s ease-in;
-  padding: 20px;
-}
-
-.card .card-title {
-  padding: 20px 10px;
-  font-size: 1.5rem;
-  color: #ec5242;
-  font-weight: bold;
-}
-
-.card:hover {
-  background: #494b4e;
 }
 
 .see-all {
@@ -347,10 +375,11 @@ i:hover {
 
 .parts li {
   padding: 12px;
+  list-style-type: none;
 }
 
 .partner-logo {
-  width: 100%;
+  width: 60px;
   height: 100%;
 }
 
@@ -372,7 +401,7 @@ i:hover {
   width: 45px;
   display: block;
   margin: 8px auto;
-  border: 2px solid #ec5242;
+  border: 1px solid #ec5242;
 }
 
 .photo {
@@ -381,27 +410,6 @@ i:hover {
   position: relative;
   margin-right: 32px;
   object-fit: cover;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  padding: 10px;
-}
-
-.footer .footer-logo {
-  display: flex;
-  padding: 0 2px;
-  align-items: center;
-}
-
-.footer p {
-  font-size: 18px;
-  color: #272a31;
-  padding: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -493,8 +501,10 @@ i:hover {
   .box-txt {
     border: 2px solid white;
     margin-left: 80px;
+    margin-top: 25px;
     padding: 10px;
     width: 550px;
+    background-color: #fff;
   }
 
   .address-txt {
@@ -508,6 +518,30 @@ i:hover {
     flex-direction: column;
     justify-content: center;
     background-image: url(../images/Back-mobile.png);
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #272a31;
+    width: 230px;
+    height: auto;
+    position: relative;
+    transition: all 0.3s ease-in;
+    padding: 20px;
+  }
+
+  .card .card-title {
+    padding: 20px 10px;
+    font-size: 1.5rem;
+    color: #ec5242;
+    font-weight: bold;
+  }
+
+  .card:hover {
+    background: #494b4e;
   }
 
   .trainer-container {
@@ -546,5 +580,15 @@ i:hover {
 
   .footer {
     flex-direction: row;
+  }
+
+  .foo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0 auto;
+    padding-right: 600px;
+    width: 50px;
+    height: 50px;
   }
 }

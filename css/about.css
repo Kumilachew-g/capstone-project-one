@@ -150,6 +150,14 @@ i:hover {
     align-items: center;
   }
 
+  .logo-container .histo::after {
+    content: '';
+    width: 45px;
+    display: block;
+    margin: 8px auto;
+    border: 1px solid #ec5242;
+  }
+
   .logo-detail .img-small {
     width: 50px;
   }
@@ -218,6 +226,22 @@ i:hover {
     width: 50px;
     margin-left: 120px;
   }
+  div .footer {
+    flex-direction: row;
+    background-color: #272a31;
+  }
+
+  .foo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #fff;
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .system-txt .txt-1 {
@@ -231,8 +255,8 @@ i:hover {
   color: white;
   font-size: 22px;
   position: absolute;
-  top: 29%;
-  left: 11%;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 .img-main .img-list {
@@ -287,6 +311,13 @@ i:hover {
   font-size: 25px;
   text-align: center;
 }
+.headlines .advert-txt .create::after {
+  content: '';
+  width: 45px;
+  display: block;
+  margin: 8px auto;
+  border: 1px solid #ec5242;
+}
 
 .address-txt {
   padding-top: 35px;
@@ -294,6 +325,9 @@ i:hover {
   text-align: center;
 }
 
+.address-txt .please {
+  background-color: #f7f7f7;
+}
 .headlines {
   min-height: 100vh;
   display: flex;
@@ -422,6 +456,12 @@ i:hover {
     margin-left: 120px;
   }
 
+  div > .logo-img {
+    align-items: center;
+    display: inline;
+    width: 50px;
+    margin-left: 500px;
+  }
   .comp-name {
     display: inline;
   }
@@ -448,6 +488,14 @@ i:hover {
     align-items: center;
   }
 
+  .logo-container .histo::after {
+    content: '';
+    width: 45px;
+    display: block;
+    margin: 8px auto;
+    border: 1px solid #ec5242;
+  }
+
   .logo-para {
     width: 100%;
     text-align: center;
@@ -471,15 +519,31 @@ i:hover {
     top: 45%;
     left: 10%;
   }
-
-  .footer {
-    background-color: #272a31;
-    color: #fff;
-    padding: 25px;
-    margin-top: 60px;
-    text-align: center;
+  .system-txt .year {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    padding-bottom: 50px;
+    margin-right: 200px;
   }
 
+  div .footer {
+    flex-direction: row;
+    background-color: #272a31;
+  }
+
+  .foo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #fff;
+    margin-top: 50px;
+    padding-right: 600px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    width: 100%;
+    height: 100%;
+  }
   .home-link {
     display: none;
   }
