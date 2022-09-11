@@ -4,6 +4,9 @@
 
 This project is mainly about creating personal portfolio by HTML5 and CSS3.
 
+# Live Demo
+  [Live Demo](https://kumilachew-g.github.io/capstone-project-one/)
+
 ## Built With
 
 - Major languages: HTML5,CSS3 and JS
