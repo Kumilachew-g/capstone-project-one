@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Capston-project-one
+# Capston-Project-One
 
 This project is mainly about creating personal portfolio by HTML5 and CSS3.
 
